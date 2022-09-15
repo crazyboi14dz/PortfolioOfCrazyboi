@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/*Paragraph Tag*/
+p{
+    line-height: 2rem;
+    font-size: 1.5rem;
+}
+
+/*List Tags*/
+ol,ul{
+    font-size: 1.5rem;
+}
+/*Container class*/
+.container{
+    padding: 16px;
+}
+.container > div > h2{
+    text-align: center;
+}
+
+/*Intro class*/
+.intro{
+    padding:16px;
+    margin: -16px;
+    background-color: #e4cab2;
+    color: #715e53;
+    text-align: center;
+}
+
+/*Profile ID*/
+#profile-img{
+    height: 400px;
+    width: 400px;
+    border-radius: 192px;
+}
+
+/*Social-links class*/
+.social-links img{
+    height: 30px;
+    width: auto;
+}
+.social-links a{
+    text-decoration: none;
+    margin: auto 16px;
+}
+
+/*Table Tags*/
+table{
+    width: 100%;
+}
+table,tr,td,th{
+
+    border-collapse: collapse;
+    border: 1px solid ;
+    width: 100vw;
+}
+th,td{
+    padding: 8px;
+   text-align: center;
+}
+
+/*Dynamic-text id and class*/
+.dynamic-text-color{
+    color:#7eb2d3;
+}
