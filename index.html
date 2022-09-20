@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <title>crazyboiPortfolio</title>
     <link href="css/style.css" rel="stylesheet">
+    <script src="js/main.js"></script>
 </head>
 <body>
-<div class="container">
-    <div class="intro">
-        <img id="profile-img" alt="Profile image - crazyboi" height="300" src="img/yeahboi.jpg" width="300">
+<header>
+    <nav>
+        <a href="#about-me">About Me</a><a href="#qualifications">Qualifications</a><a href="#hobbies">Hobbies</a><a
+            href="#technologies">Technologies</a><a href="#contact-me">Contact</a>
+    </nav>
+</header>
+<main class="container">
+    <article class="intro">
+        <img alt="Profile image - crazyboi" height="300" id="profile-img" src="img/yeahboi.jpg" width="300">
         <h1>Hi, I'm Dillip </h1>
-        <p>I am a <span id="dynamic-text" class="dynamic-text-color"></span></p>
+        <p>I am a <span class="dynamic-text-color" id="dynamic-text"></span></p>
         <p class="social-links">
             <a href="https://twitter.com/14dzCrazyboi?s=09" target="_blank">
                 <img alt="myTwitterA/c" height="30"
@@ -29,35 +36,35 @@
                      width="auto">
             </a>
         </p>
-    </div>
+    </article>
 
-    <div id="about-me">
+    <section id="about-me">
         <h2>About Me</h2>
         <p>I am a second-year student pursuing BCA @ Rofel BBA & BCA College Vapi Came to have new experiences, meet new
             people and learn new things. </p>
         <p>I find myself to have interest in Web Designing.</p>
         <p>I'm doing Full Stack Development Course with the help of Devsnest (e-learning providers) as a Trainee.</p>
-    </div>
+    </section>
 
-    <div id="qaulifications">
+    <section id="qualifications">
         <h2>Qualifications</h2>
         <ol>
             <li>Completed my High School as in Commerce Stream.</li>
             <li>Now Pursuing for BCA.</li>
         </ol>
 
-    </div>
+    </section>
 
-    <div id="hobby">
+    <section id="hobbies">
         <h2>Hobbies</h2>
         <ul>
             <li>Boxing</li>
             <li>Watching Anime/Manga</li>
             <li>Sleeping</li>
         </ul>
-    </div>
+    </section>
 
-    <div id="technologies">
+    <section id="technologies">
         <h2>Technologies</h2>
         <table>
             <tr>
@@ -85,10 +92,29 @@
             </tr>
 
         </table>
-    </div>
-</div>
-
-<script src="js/main.js"></script>
+    </section>
+    <section id="contact-me">
+        <form id="contact" method="POST" name="contact">
+            <h1>Contact Me</h1>
+            <section>
+                <label for="firstName">First name</label>
+                <input autocomplete="off" id="firstName" name="firstName" required type="text"/>
+            </section>
+            <section>
+                <label for="lastName">Last name</label>
+                <input id="lastName" name="lastName" required type="text"/>
+            </section>
+            <section>
+                <label for="message">Message</label>
+                <textarea cols="30" id="message" name="message" required rows="10"> </textarea>
+            </section>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</main>
+<footer>
+    Made with ❤️ by crazyboi ©2022
+</footer>
 
 </body>
 </html>
