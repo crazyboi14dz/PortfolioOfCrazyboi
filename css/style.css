@@ -58,6 +58,7 @@ footer {
     height: 400px;
     width: 400px;
     border-radius: 192px;
+    pointer-events: none;
 }
 
 /*Social-links class*/
