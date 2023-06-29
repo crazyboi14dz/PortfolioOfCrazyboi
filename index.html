@@ -1,120 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>crazyboiPortfolio</title>
-    <link href="css/style.css" rel="stylesheet">
-    <script src="js/main.js"></script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>crazyboi_14dz</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/projects.css" />
 </head>
+
 <body>
-<header>
+  <section class="menu">
+    <button id="close-menu">&times;</button>
     <nav>
-        <a href="#about-me">About Me</a><a href="#qualifications">Qualifications</a><a href="#hobbies">Hobbies</a><a
-            href="#technologies">Technologies</a><a href="#contact-me">Contact</a>
+      <ul>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#technologies">Technologies</a></li>
+        <li><a href="#qualifications">Qualifications</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#contact-me">Contact</a></li>
+      </ul>
     </nav>
-</header>
-<main class="container">
+  </section>
+  <header class="header">
+    <nav class="default-nav">
+      <section>
+        <a href="#about-me">About Me</a><a href="#projects">Projects</a><a href="#technologies">Technologies</a><a
+          href="#qualifications">Qualifications</a><a href="#hobbies">Hobbies</a><a href="#contact-me">Contact</a>
+      </section>
+      <section>
+        <button id="theme-switcher"></button>
+      </section>
+    </nav>
+    <nav class="mobile-nav">
+      <button id="menu-button"><img src="svg/hamburger-menu.svg" height="23px" width="30px" alt="menu"></button>
+    </nav>
+  </header>
+  <main class="container">
     <article class="intro">
-        <img alt="Profile image - crazyboi" height="300" id="profile-img" src="img/yeahboi.jpg" width="300">
-        <h1>Hi, I'm Dillip </h1>
-        <p>I am a <span class="dynamic-text-color" id="dynamic-text"></span></p>
-        <p class="social-links">
-            <a href="https://twitter.com/14dzCrazyboi?s=09" target="_blank">
-                <img alt="myTwitterA/c" height="30"
-                     src="https://logos-world.net/wp-content/uploads/2020/04/Twitter-Logo.png"
-                     width="auto">
-            </a>
-
-            <a href="https://www.linkedin.com/in/crazyboi14dz/" target="_blank">
-                <img alt="myLinkedINa/c" height="30" src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG39.png"
-                     width="auto">
-            </a>
-
-            <a href="https://www.instagram.com/crazyboi_14dz/" target="_blank">
-                <img alt="myInstagramA/c" height="30"
-                     src="https://multarte.com.br/wp-content/uploads/2019/03/logo-instagram-png-fundo-transparente13-1024x1024.png"
-                     width="auto">
-            </a>
-        </p>
+      <img id="profile-image" src="img/yeahboi.jpg" alt="Profile image - crazyboi" />
+      <h1>Hi, I'm Dillip</h1>
+      <p>I am a <span id="dynamic-text" class="dynamic-text-color"></span></p>
+      <p class="social-links">
+        <a href="https://twitter.com/14dzCrazyboi" target="_blank">
+          <img width="30" height="30" src="https://www.iconpacks.net/icons/1/free-icon-twitter-135.png" alt="" />
+        </a>
+        <a href="https://www.linkedin.com/in/crazyboi14dz" target="_blank">
+          <img width="30" height="30" src="https://www.iconpacks.net/icons/1/free-icon-linkedin-130.png" alt="" />
+        </a><a href="https://www.instagram.com/crazyboi_14dz" target="_blank">
+          <img width="30" height="30" src="https://www.iconpacks.net/icons/3/free-icon-instagram-logo-8869.png"
+            alt="" />
+        </a>
+      </p>
     </article>
-
     <section id="about-me">
-        <h2>About Me</h2>
-        <p>I am a second-year student pursuing BCA @ Rofel BBA & BCA College Vapi Came to have new experiences, meet new
-            people and learn new things. </p>
-        <p>I find myself to have interest in Web Designing.</p>
-        <p>I'm doing Full Stack Development Course with the help of Devsnest (e-learning providers) as a Trainee.</p>
+      <h2>About Me</h2>
+      <p>
+        I'm a final-year BCA student at Rofel BBA & BCA College, Vapi, aiming to learn, experience, and connect with
+        others.
+      </p>
+
+      <p>
+        I've discovered that I'm interested in web design and plan to
+        pursue it as a career.
+      </p>
+
+      <p>
+        An accomplished web developer proficient in various stages of advanced web development. Possessing a deep
+        understanding of user interface, testing, and debugging processes. Demonstrating expertise in designing,
+        installing, testing, and maintaining web systems. Equipped with a versatile skill set and a wealth of
+        experience.
+      </p>
+
+      <p>
+        Skilled in a range of cutting-edge technologies, including HTML, CSS, JavaScript, jQuery, Bootstrap, PHP, MySQL
+        Server, and Figma. Demonstrating a proven ability to self-manage during independent projects and work
+        effectively
+        within a team environment.
+      </p>
     </section>
 
-    <section id="qualifications">
-        <h2>Qualifications</h2>
-        <ol>
-            <li>Completed my High School as in Commerce Stream.</li>
-            <li>Now Pursuing for BCA.</li>
-        </ol>
+    <section id="projects">
+      <h2>Projects</h2>
+      <section class="projects-list"></section>
 
     </section>
 
-    <section id="hobbies">
-        <h2>Hobbies</h2>
-        <ul>
-            <li>Boxing</li>
-            <li>Watching Anime/Manga</li>
-            <li>Sleeping</li>
-        </ul>
-    </section>
 
     <section id="technologies">
-        <h2>Technologies</h2>
-        <table>
-            <tr>
-                <th>Frontend</th>
-                <th>Backend</th>
-                <th>Database</th>
-            </tr>
 
-            <tr>
-                <td>HTML</td>
-                <td>NodeJS</td>
-                <td>MySQL</td>
-            </tr>
-
-            <tr>
-                <td>CSS</td>
-                <td>Rails</td>
-                <td>MongoDB</td>
-            </tr>
-
-            <tr>
-                <td>JS</td>
-                <td>ASP.NET</td>
-                <td>PostgreSQL</td>
-            </tr>
-
-        </table>
+      <h2>Technologies</h2>
+      <section class="container">
+        <section class="card shadow move-y shadow move-y">
+          <header>
+            <h1>Frontend</h1>
+          </header>
+          <ul>
+            <li>HTML</li>
+            <li>JS</li>
+            <li>CSS</li>
+            <li>jQuery</li>
+            <li>Bootstrap</li>
+          </ul>
+        </section>
+        <section class="card shadow move-y">
+          <header>
+            <h1>Backend</h1>
+          </header>
+          <ul>
+            <li>PHP</li>
+          </ul>
+        </section>
+        <section class="card shadow move-y">
+          <header>
+            <h1>Database</h1>
+          </header>
+          <ul>
+            <li>MySQL</li>
+          </ul>
+        </section>
+      </section>
+    </section>
+    <section id="qualifications">
+      <h2>Qualifications</h2>
+      <ul>
+        <li>Pursuing BCA</li>
+      </ul>
+    </section>
+    <section id="hobbies">
+      <h2>Hobbies</h2>
+      <ul>
+        <li>Listening to Music</li>
+        <li>Watching Anime/</li>
+        <li>Manga</li>
+      </ul>
+    </section>
     </section>
     <section id="contact-me">
-        <form id="contact" method="POST" name="contact">
-            <h1>Contact Me</h1>
-            <section>
-                <label for="firstName">First name</label>
-                <input autocomplete="off" id="firstName" name="firstName" required type="text"/>
-            </section>
-            <section>
-                <label for="lastName">Last name</label>
-                <input id="lastName" name="lastName" required type="text"/>
-            </section>
-            <section>
-                <label for="message">Message</label>
-                <textarea cols="30" id="message" name="message" required rows="10"> </textarea>
-            </section>
-            <button type="submit">Send</button>
+      <h2>Contact Me</h2>
+      <section class="contacts-container">
+        <section class="contact-img">
+          <img src="img/undraw_Mailbox.png" alt="image for mailbox">
+        </section>
+        <form name="contact" id="contact">
+          <section>
+            <label for="firstName">First name</label>
+            <input type="text" name="firstName" id="firstName" required />
+          </section>
+          <section>
+            <label for="lastName">Last name</label>
+            <input type="text" name="lastName" id="lastName" required />
+          </section>
+          <section>
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10"> </textarea>
+          </section>
+          <button type="submit">Send</button>
         </form>
+      </section>
     </section>
-</main>
-<footer>
-    Made with ❤️ by crazyboi ©2022
-</footer>
-
+  </main>
+  <footer>
+    Made with ❤️ by crazyboi_14dz ©2023
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/projects.js"></script>
 </body>
+
 </html>
